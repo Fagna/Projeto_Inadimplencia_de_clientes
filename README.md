@@ -14,7 +14,7 @@ Links:
 
 - [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9)
 
-- [Análise completa em Python (aquivo Jupyter)](https://github.com/Fagna/Projeto_Inadimplencia_de_clientes/Analise-exploratória-e-modelo ) 
+- [Análise completa em Python (arquivo Jupyter)](https://github.com/Fagna/Projeto_Inadimplencia_de_clientes/Analise-exploratória-e-modelo ) 
 
 - [Análise complementar em R](https://rpubs.com/fagna/1040245) 
 
