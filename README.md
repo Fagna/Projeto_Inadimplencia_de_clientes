@@ -6,15 +6,31 @@ A variável alvo é Status de pagamento (1: Inadimplente, 0: Adimplente), as dem
 
 **Objetivos:** Avaliar se os atributos: limite de crédito, estado civil, escolaridade, sexo, idade (categorias foram criadas para as variáveis limite de crédito e idade) possuem associação com a inadimplência de clientes. Em caso de positivo determinar o grau de associação. Obter um modelo de previsão utilizando algoritmos de aprendizado de máquina.
 
-Teste de hipóteses foram realizados e outras medidas estatísticas foram obtidas. Em seguida, foi obtido um modelo de aprendizado de máquina, considerando técnicas de subamstragem e o princípio da parcimônia. 
+Testes de hipóteses foram realizados e outras medidas estatísticas foram obtidas. Em seguida, foi obtido um modelo de aprendizado de máquina, considerando técnicas de subamstragem e o princípio da parcimônia. 
 
-Ferramentas: Rstudio, Jupyter e Power BI.
+Resumo das etapas realizadas:
+
+1º Tratamento de inconsistências nos dados;
+
+2º Análise exploratória;
+
+3º Testes de hipóteses para todas as variáveis categóricas: O teste qui-quadrado para avaliar a existência de dependencia entres as variáveis preditivas e a variável predita. Exemplo: Existe associação entre o nível de escolaridade de cliente e a inadimplência? A resposta para essa pergunta foi "sim". Para medir o grau de associação ou dependência foi utilizada a razão de chances ou *odds ratio*;
+
+4º Modelagem: Uso de algoritmos de Machine Learning para obtenção de um modelo capaz de classificar o status de pagamento do cliente no próximo mês (1 = Inadimplente, 0 = Adimplente). 
+
+**Resultados:**
+
+- A partir dos teste estatísticos (teste qui-quadrado e razão de chances), observou-se que uma tendência maior de inadimplência entre cliente do sexo masculino, escolaridade ensino médio, categoria de crédito silver (menor faixa de limite de crédito), estado civil casado ou não especificado e faixa etária dos 20 à 29 anos e a partir dos 40 anos.
+
+- O modelo obtido por meio de técnicas de machine learning, teve capacidade de distinguir entre as duas classes, adimplente e inadimplente, em 71%, com probabilidade de 0.78 de acerto da classe positiva. Em se tratando da tomada de decisão, deve-se tomar maior cuidado com a taxa de *falsos negativos* cometidos pelo modelo, ou seja, é mais preocupante a situação em que o modelo prevê que o cliente **vai pagar** quando na verdade **não vai pagar**, do que prevê que o clente **não vai pagar** quando na verdade **vai pagar**. Lembre, **vai pagar (adimplente) é nossa classe negativa**, e **não vai pagar (inadimplente) é nossa classe positiva**. Nesta situação, o modelo que obteve maior probabilidade de acerto da classe positiva e maior poder discriminante cometeu uma taxa de 0.37 (37%) de falsos negativos. Para mais detalahes acesse o notebook [Análise exploratória e modelo]([https://rpubs.com/fagna/1040245](https://github.com/Fagna/Projeto_Inadimplencia_de_clientes/blob/main/Analise-explorat%C3%B3ria-e-modelo%20.ipynb)).
+
+Ferramentas utilizadas: Rstudio, Jupyter notebook e Power BI.
 
 Links:
 
-- [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9)
+- [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9): Um visual básico em Power BI que mostra uma visão geral da base de dados e uma Storytelling.
 
-- [Análise complementar em R](https://rpubs.com/fagna/1040245) 
+- [Análise complementar em R](https://rpubs.com/fagna/1040245): A Linguagem de programação R é sem dúvidas uma das melhores para testes estatísticos. Portanto, mesmo fazendo a análise completa no Python, utilizei essa ferramenta que dispõe de várias biblitecas para realizar o teste de qui-quadrado e a razão de chances.
 
 
 
