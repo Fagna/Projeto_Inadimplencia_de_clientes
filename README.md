@@ -24,14 +24,6 @@ Resumo das etapas realizadas:
 
 - O modelo obtido por meio de técnicas de machine learning, teve capacidade de distinguir entre as duas classes, adimplente e inadimplente, em 71%, com probabilidade de 0.78 de acerto da classe positiva. Em se tratando da tomada de decisão, deve-se tomar maior cuidado com a taxa de *falsos negativos* cometidos pelo modelo, ou seja, é mais preocupante a situação em que o modelo prevê que o cliente **vai pagar** quando na verdade **não vai pagar**, do que prevê que o clente **não vai pagar** quando na verdade **vai pagar**. Lembre, **vai pagar (adimplente) é nossa classe negativa**, e **não vai pagar (inadimplente) é nossa classe positiva**. Nesta situação, o modelo que obteve maior probabilidade de acerto da classe positiva e maior poder discriminante cometeu uma taxa de 0.37 (37%) de falsos negativos. Para mais detalhes acesse o notebook [Análise exploratória e modelo](https://github.com/Fagna/Projeto_Inadimplencia_de_clientes/blob/main/Analise-explorat%C3%B3ria-e-modelo%20.ipynb).
 
-Ferramentas utilizadas: Rstudio, Jupyter notebook e Power BI.
-
-Links:
-
-- [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9): Um visual básico em Power BI que mostra uma visão geral da base de dados e uma Storytelling.
-
-- [Análise complementar em R](https://rpubs.com/fagna/1040245): A Linguagem de programação R é sem dúvidas uma das melhores para testes estatísticos. Portanto, mesmo fazendo a análise completa no Python, utilizei essa ferramenta que dispõe de várias biblitecas para realizar o teste de qui-quadrado e a razão de chances.
-
 Tabela com resultado final da análise, os resultados são referente o modelo mais simples (parcimonioso) usando a técnica de subamostragem das observações da classe majoritária.
 
 |                    | Accuracy | Precision | Recall | AUC probability | AUC predict |
@@ -42,6 +34,16 @@ Tabela com resultado final da análise, os resultados são referente o modelo ma
 | LightGBM           | 0.76     | 0.47      | 0.62   | 0.78            | 0.71        |
 | CatBoost           | 0.77     | 0.48      | 0.62   | 0.78            | 0.71        |
 | Rede Neural        | 0.73     | 0.43      | 0.64   | 0.77            | 0.70        |
+
+Ferramentas utilizadas: Rstudio, Jupyter notebook e Power BI.
+
+Links:
+
+- [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9): Um visual básico em Power BI que mostra uma visão geral da base de dados e uma Storytelling.
+
+- [Análise complementar em R](https://rpubs.com/fagna/1040245): A Linguagem de programação R é sem dúvidas uma das melhores para testes estatísticos. Portanto, mesmo fazendo a análise completa no Python, utilizei essa ferramenta que dispõe de várias biblitecas para realizar o teste de qui-quadrado e a razão de chances.
+
+
 
 
 
