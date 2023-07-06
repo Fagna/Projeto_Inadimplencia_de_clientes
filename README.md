@@ -35,6 +35,8 @@ Tabela com resultado final da análise, os resultados são referente o modelo ma
 | CatBoost           | 0.77     | 0.48      | 0.62   | 0.78            | 0.71        |
 | Rede Neural        | 0.73     | 0.43      | 0.64   | 0.77            | 0.70        |
 
+**Obs:** O recall (*taxa de verdadeiro positivo*) é complementar a *taxa de falso negativo*.
+
 Ferramentas utilizadas: Rstudio, Jupyter notebook e Power BI.
 
 Links:
