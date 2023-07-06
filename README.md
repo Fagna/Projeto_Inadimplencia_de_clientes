@@ -32,6 +32,18 @@ Links:
 
 - [Análise complementar em R](https://rpubs.com/fagna/1040245): A Linguagem de programação R é sem dúvidas uma das melhores para testes estatísticos. Portanto, mesmo fazendo a análise completa no Python, utilizei essa ferramenta que dispõe de várias biblitecas para realizar o teste de qui-quadrado e a razão de chances.
 
+Tabela com resultado final da análise, os resultados são referente o modelo mais simples (parcimonioso) usando a técnica de subamostragem das observações da classe majoritária.
+
+|                    | Accuracy | Precision | Recall | AUC probability | AUC predict |
+|--------------------|----------|-----------|--------|-----------------|-------------|
+| Random Forest      | 0.76     | 0.46      | 0.60   | 0.77            | 0.70        |
+| Regressão Logística| 0.69     | 0.38      | 0.65   | 0.73            | 0.67        |
+| XGBoost            | 0.76     | 0.46      | 0.62   | 0.77            | 0.70        |
+| LightGBM           | 0.76     | 0.47      | 0.62   | 0.78            | 0.71        |
+| CatBoost           | 0.77     | 0.48      | 0.62   | 0.78            | 0.71        |
+| Rede Neural        | 0.73     | 0.43      | 0.64   | 0.77            | 0.70        |
+
+
 
 
  
