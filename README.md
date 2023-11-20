@@ -39,10 +39,6 @@ Tabela com resultado final da análise, os resultados são referente o modelo ma
 
 Ferramentas utilizadas: Rstudio, Jupyter notebook e Power BI.
 
-Links:
-
-- [Visual em Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzNlYTA0YmUtMDRiOC00NWU4LWE0MDAtMGIxYjc5ZDdjNDEyIiwidCI6ImVmODAxNDBiLTE1MGQtNDY0Yy04ZGY4LTUwZGNjMmMyMzk2YyJ9): Um visual básico em Power BI que mostra uma visão geral da base de dados e uma Storytelling.
-
 - [Análise complementar em R](https://rpubs.com/fagna/1040245): A Linguagem de programação R é sem dúvidas uma das melhores para testes estatísticos. Portanto, mesmo fazendo a análise completa no Python, utilizei essa ferramenta que dispõe de várias biblitecas para realizar o teste de qui-quadrado e a razão de chances.
 
 
